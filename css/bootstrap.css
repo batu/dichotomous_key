@@ -5,26 +5,47 @@
  */
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+.bottom_pad{
+  height: 1000px;
+}
+
+.block{
+  margin: auto;
+  width: 90%;
+}
+.left-block{
+  width: 35%;
+  float: right;
+}
+
+.right-block{
+  width: 60%;
+  float:left;
+}
+
 .answer{
   font-size: 16px;
   border-radius: 5px;
   border: 2px solid #6495ED;
   background-color: #BCD2EE;
   padding: 10px;
-  height: 70px;
-  width: 260px;
+  height: 20px;
+  width: 500px;
   margin: 10px;
+  line-height: 1px;
   text-align: center;
-  text-indent: center;
   float: left;
   display: inline-block;
-  vertical-align: middle;
-  line-height: normal; 
-}
 
+}
+.ENDGAME{
+
+    margin: 20px, 10px;
+    text-align: 
+}
 .animal{
-  height: 40px;
   float: left;
+  width: 240px;
 }
 
 .answerA_container{
@@ -38,6 +59,7 @@
   font-size: 24px;
 }
 .question{
+  padding-top: 28px;
   clear: both;
 }
 
