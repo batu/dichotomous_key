@@ -179,33 +179,33 @@
       </div>
       
       <div class = "answerT_container">
-          <div data =  "1" class = "answer term ui-widget-content"> Animal has a two chambered heart </div>
-          <div data =  "2" class = "answer term ui-widget-content"> Animal has more than two chambered heart </div>
-          <div data =  "3" class = "answer term ui-widget-content"> Animal's internal skeleton is made of bone </div>
-          <div data =  "4" class = "answer term ui-widget-content"> Animal's is internal skeleton is made of cartilage </div>
-          <div data =  "5" class = "answer term ui-widget-content"> Animal undergoes metamorphosis </div>
-          <div data =  "6" class = "answer term ui-widget-content"> Animal feeds on dead or living matter </div>
-          <div data =  "7" class = "answer term ui-widget-content"> Animal feeds on living matter </div>
-          <div data =  "8" class = "answer term ui-widget-content"> Animal has four legs </div>
-          <div data =  "9" class = "answer term ui-widget-content"> Animal does not have any legs </div>
-          <div data =  "10" class = "answer term ui-widget-content"> Animal's lungs have parabronchi </div>
-          <div data =  "11" class = "answer term ui-widget-content"> Animal feeds on fish and other aquatic animals </div>
-          <div data =  "12" class = "answer term ui-widget-content"> Animal feeds on insects and some fruit </div>
-          <div data =  "13" class = "answer term ui-widget-content"> Animal forms nursery roosts, where caring takes place </div>
-          <div data =  "14" class = "answer term ui-widget-content"> Animal  leaves the youngster during nursing period near the water. </div>
+          <div data =  "1" class = "-1 answer term ui-widget-content"> Animal has a two chambered heart </div>
+          <div data =  "2" class = "-2 answer term ui-widget-content"> Animal has more than two chambered heart </div>
+          <div data =  "3" class = "-3 answer term ui-widget-content"> Animal's internal skeleton is made of bone </div>
+          <div data =  "4" class = "-4 answer term ui-widget-content"> Animal's is internal skeleton is made of cartilage </div>
+          <div data =  "5" class = "-5 answer term ui-widget-content"> Animal undergoes metamorphosis </div>
+          <div data =  "6" class = "-6 answer term ui-widget-content"> Animal feeds on dead or living matter </div>
+          <div data =  "7" class = "-7 answer term ui-widget-content"> Animal feeds on living matter </div>
+          <div data =  "8" class = "-8 answer term ui-widget-content"> Animal has four legs </div>
+          <div data =  "9" class = "-9 answer term ui-widget-content"> Animal does not have any legs </div>
+          <div data =  "10" class = "-10 answer term ui-widget-content"> Animal's lungs have parabronchi </div>
+          <div data =  "11" class = "-11 answer term ui-widget-content"> Animal feeds on fish and other aquatic animals </div>
+          <div data =  "12" class = "-12 answer term ui-widget-content"> Animal feeds on insects and some fruit </div>
+          <div data =  "13" class = "-13 answer term ui-widget-content"> Animal forms nursery roosts, where caring takes place </div>
+          <div data =  "14" class = "-14 answer term ui-widget-content"> Animal  leaves the youngster during nursing period near the water. </div>
       </div>
       
       <div class = "answerA_container">
-          <div  data =  "15" class = "answer animal ui-widget-content"> Symphysodon aequifasciatus</div>
-          <div  data =  "16" class = "answer animal ui-widget-content"> Xiphias gladius </div>
-          <div  data =  "17" class = "answer animal ui-widget-content"> Rhinella marina </div>
-          <div  data =  "18" class = "answer animal ui-widget-content"> Tinctorius citronella </div>
-          <div  data =  "19" class = "answer animal ui-widget-content"> Varanus rosenbergi </div>
-          <div  data =  "20" class = "answer animal ui-widget-content"> Eunectes murinus </div>
-          <div  data =  "21" class = "answer animal ui-widget-content"> Gavia immer </div>
-          <div  data =  "22" class = "answer animal ui-widget-content"> Cyanerpes cyaneus </div>
-          <div  data =  "23" class = "answer animal ui-widget-content"> Acerodon jubatus </div>
-          <div  data =  "24" class = "answer animal ui-widget-content"> Phoca groenlandica </div>
+          <div  data =  "15" class = "-15 answer animal ui-widget-content"> Symphysodon aequifasciatus</div>
+          <div  data =  "16" class = "-16 answer animal ui-widget-content"> Xiphias gladius </div>
+          <div  data =  "17" class = "-17 answer animal ui-widget-content"> Rhinella marina </div>
+          <div  data =  "18" class = "-18 answer animal ui-widget-content"> Tinctorius citronella </div>
+          <div  data =  "19" class = "-19 answer animal ui-widget-content"> Varanus rosenbergi </div>
+          <div  data =  "20" class = "-20 answer animal ui-widget-content"> Eunectes murinus </div>
+          <div  data =  "21" class = "-21 answer animal ui-widget-content"> Gavia immer </div>
+          <div  data =  "22" class = "-22 answer animal ui-widget-content"> Cyanerpes cyaneus </div>
+          <div  data =  "23" class = "-23 answer animal ui-widget-content"> Acerodon jubatus </div>
+          <div  data =  "24" class = "-24 answer animal ui-widget-content"> Phoca groenlandica </div>
       </div>
     </div><!-- /.container -->
   </div>
@@ -242,10 +242,12 @@
     $(".ENDGAME").click(function(){
         for (var i = 0;  i <= results.length ; i++) {
           if (results[i]  == 1) {
-            $('._' + (i+1)).css('color', "green");
+            $('.-' + (i+1)).css('background-color', "green");
+            $('.-' + (i+1)).css('color', "white");
             console.log("birşeyler oldu correct")
           } else {
-            $('._' + (i+1)).css('color', "red");
+            $('.-' + (i+1)).css('background-color', "red");
+            $('.-' + (i+1)).css('color', "white");
             console.log("birşeyler oldu WRONG")
           }
         };
