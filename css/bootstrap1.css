@@ -5,25 +5,24 @@
  */
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+
 .bottom_pad{
   height: 1000px;
 }
 
 .block{
-  margin: auto;
-  width: 95%;
+  width: 1501px;
 }
 .left-block{
-  width: 40%;
+  width: 600px;
   float: right;
 }
 
 .right-block{
-  width: 60%;
+  width: 890px;
   float:left;
 }
-
-
 
 .answer{
   font-size: 1.2em;
